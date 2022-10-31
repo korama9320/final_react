@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import img from "../../images/Slider1.jpg";
-import img1 from "../../images/Slider2.webp";
-import img2 from "../../images/Slider3.webp";
+import img from "../../images/slider4.jpg";
+import img1 from "../../images/slider2.jpg";
+import img2 from "../../images/slider3.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faAngleDoubleLeft,

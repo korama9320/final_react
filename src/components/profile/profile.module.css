@@ -100,8 +100,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: linear-gradient(rgba(37, 35, 35, 0.7), rgba(37, 35, 35, 0.7)),
-    url("../../images/workout3.jpg");
+  background: linear-gradient(rgba(37, 35, 35, 0.5), rgba(37, 35, 35, 0.5)),
+    url("../../images/pexels-leon-ardho-1552252.jpg");
   background-size: cover;
   height: 100%;
   background-position: center;

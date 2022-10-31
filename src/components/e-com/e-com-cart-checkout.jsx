@@ -16,6 +16,13 @@ function EComCheckout() {
       });
     }
   }
+  useEffect(() => {
+    axios.post("http://localhost:8000/api/v1/users/update", {
+      email: user.email,
+      cart: cart,
+    });
+  }, [cart]);
+
   return (
     <>
       <div>

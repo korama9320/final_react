@@ -68,7 +68,7 @@ function Navbar(props) {
           <NavLink to="/Trainers">Trainers</NavLink>
         </li>
         <li>
-          <NavLink to="/SignUp">SignUp</NavLink>
+          <NavLink to="/Login">Log In</NavLink>
         </li>
         <li>
           <NavLink to="/profile">

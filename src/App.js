@@ -6,6 +6,7 @@ import LandingPage from "./components/landingpage/landing-main";
 import { useEffect, useState } from "react";
 import ScrollToTheTop from "./components/e-com/scrollup";
 import Profile from "./components/profile/profile";
+import LoginForm from "./components/login/LoginForm";
 function App() {
   let [scroll, setScroll] = useState(window.scrollY);
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
           }
         />
         <Route path="/ecom/*" element={<ECom />} />
+        <Route path="/login" element={<LoginForm />} />
         <Route path="/profile" element={<Profile />} />
       </Routes>
       {scroll > 500 && <ScrollToTheTop />}

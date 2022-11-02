@@ -13,6 +13,7 @@ import {
   setProduce,
   setPagenate,
 } from "../../Redux/Actions/productsAction";
+import axios from "axios";
 function ECom() {
   const dispatch = useDispatch();
 
@@ -38,6 +39,15 @@ function ECom() {
       })
     );
   }, [produce]);
+  /////////////////////////////////////cartupdate/////////////////////////////////////
+  let user = useSelector((state) => state.userReducer.user);
+  let cartt = useSelector((state) => state.cartReducer.cart);
+  useEffect(() => {
+    axios.post("http://localhost:8000/api/v1/users/update", {
+      email: user.email,
+      cart: cartt,
+    });
+  }, [cartt]);
 
   return (
     <>

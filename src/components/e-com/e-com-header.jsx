@@ -14,7 +14,7 @@ function EComHeader() {
   let [num, setNum] = useState(1);
   let view = imges[num];
 
-  ////// slider interval//////
+  /////////////////// slider interval///////////////
   useEffect(() => {
     let slider = setInterval(function () {
       setNum((pre) => {

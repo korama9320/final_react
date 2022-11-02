@@ -120,7 +120,6 @@ function EComSidebar(props) {
           <h3>Sort by</h3>
           <br />
           <label htmlFor="Title" className={Abdo.container}>
-            {" "}
             <input
               type="radio"
               name="sort"

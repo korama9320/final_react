@@ -4,9 +4,9 @@ import hamdy from "./profile.module.css";
 function ProfileDetails() {
   const user = useSelector((state) => state.userReducer.user);
   const BMR =
-    user.gender === "Male"
+    user.gender === "male"
       ? 10 * user.weight + 6.25 * user.height - 5 * user.age + 5
-      : user.gender === "Female"
+      : user.gender === "female"
       ? 10 * user.weight + 6.25 * user.height - 5 * user.age - 161
       : 1200;
   return (
@@ -36,10 +36,13 @@ function ProfileDetails() {
           </p>
         </div>
         <div>
-          {" "}
           <p>
             <span>BMI </span> <br />
             {(user.weight / Math.pow(user.height / 100, 2)).toFixed(2)}
+          </p>
+          <p>
+            <span>BMR </span> <br />
+            {BMR}
           </p>
           <p>
             <span>Protein </span> <br />
@@ -49,10 +52,6 @@ function ProfileDetails() {
             <span>Healthy weight range </span> <br />
             {(19 * Math.pow(user.height / 100, 2)).toFixed(2)}-
             {(25 * Math.pow(user.height / 100, 2)).toFixed(2)} kg
-          </p>
-          <p>
-            <span>BMR </span> <br />
-            {BMR}
           </p>
           <p>
             <span>Low activity </span> <br />
